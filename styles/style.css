@@ -15,6 +15,7 @@ html {
 
 .menu_icon {
   height: 1.5rem;
+  margin-left: 10px;
 }
 
 h1 {
@@ -77,9 +78,9 @@ header {
 }
 
 .logo {
-  /* background-color: darkmagenta; */
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
 }
 
 .nav {
@@ -99,7 +100,7 @@ header {
 .menu.settings a {
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 3fr;
 }
 
 .settings {
