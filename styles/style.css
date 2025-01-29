@@ -6,7 +6,12 @@ html {
 }
 
 .icon {
+  height: 1.5rem;
   color: white;
+}
+
+.dark_icon {
+  color: #000;
 }
 
 .dashboard_icon {
@@ -14,8 +19,12 @@ html {
 }
 
 .menu_icon {
-  height: 1.5rem;
   margin-left: 10px;
+}
+
+.search_icon {
+  height: 1.5rem;
+  margin-left: 15px;
 }
 
 h1 {
@@ -49,14 +58,40 @@ header {
   grid-column: 2;
   grid-row: 1 / 2;
   background: white;
+  padding: 0 0 20px 20px;
+  position: relative;
+  box-shadow: 5px 5px 6px 3px rgba(0, 0, 0, 0.3);
 }
 
 .search {
-  background: gray;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  align-items: center;
 }
 
+.search input {
+  background: rgb(226, 232, 240);
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  width: 570px;
+}
 .alerts {
-  background: darkred;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  justify-content: start;
+  .name {
+    display: grid;
+    align-items: center;
+    justify-self: start;
+    grid-template-columns: 1fr 2fr;
+    font-size: 1.5rem;
+    img {
+      border-radius: 25px;
+      height: 50px;
+    }
+  }
+  align-items: center;
 }
 
 .user-info {
